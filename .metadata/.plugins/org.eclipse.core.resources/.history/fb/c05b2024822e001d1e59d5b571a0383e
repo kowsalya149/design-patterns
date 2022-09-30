@@ -1,0 +1,17 @@
+package com.adapterpattern.birdsound;
+
+public class App {
+	public static void main(String[] args) {
+		
+		System.out.println("Toy behave like bird");
+		
+		ToyBird birdAdapterToy = new BirdAdapterToy(new Sparrow());
+		birdAdapterToy.squeak();
+		
+		System.out.println("Bird behave like toy");
+		
+		Bird birdAdapter = new BirdAdapter(new ToyDuck());
+		birdAdapter.fly();
+		birdAdapter.makeSound();
+	}
+}

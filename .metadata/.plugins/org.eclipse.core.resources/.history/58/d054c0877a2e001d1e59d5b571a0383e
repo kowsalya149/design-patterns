@@ -1,0 +1,5 @@
+package com.adapterpattern;
+
+public class Car {
+
+}
